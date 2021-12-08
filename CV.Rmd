@@ -1,14 +1,15 @@
 ---
-name: Tristan RH 
-surname: Goodbody
-position: "Remote Sensing of Forests Specialist"
+name: Francois 
+surname: du Toit
+position: "PhD Candidate"
 address: "University of British Columbia, Vancouver"
-#profilepic: "./img/me.jpg"
-phone: +604 992 1327
-email: "tristan.goodbody@ubc.ca"
-github: tgoodbody
-twitter: GoodbodyT
-orcid: 0000-0002-6894-7925
+profilepic: "./img/me.jpg"
+phone: +778 919 5353
+email: "fdutoit2009@gmail.com"
+#github: francoisdt14
+#twitter: 
+linkedin: francoisdt14
+orcid: 0000-0002-6637-7041
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 414141
 docname: CV
@@ -68,14 +69,22 @@ experience %>%
 # Education
 
 ```{r EDUCATION}
-education %>%
+
+orcid_data %>%
   detailed_entries(
-    with = title,
-    what = unit,
-    why = detail,
-    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
-    where = where, .protect = F
+    what = `education-summary.role-title`,
+    when = glue::glue("{`education-summary.start-date.year.value`} - {`education-summary.end-date.year.value`}"),
+    with = `education-summary.organization.name`,
+    where = `education-summary.organization.address.city`
   )
+# education %>%
+#   detailed_entries(
+#     with = title,
+#     what = unit,
+#     why = detail,
+#     when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
+#     where = where, .protect = F
+#   )
 
 ```
 
