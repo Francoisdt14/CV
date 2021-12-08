@@ -70,21 +70,21 @@ experience %>%
 
 ```{r EDUCATION}
 
-orcid_data %>%
-  detailed_entries(
-    what = `education-summary.role-title`,
-    when = glue::glue("{`education-summary.start-date.year.value`} - {`education-summary.end-date.year.value`}"),
-    with = `education-summary.organization.name`,
-    where = `education-summary.organization.address.city`
-  )
-# education %>%
+# orcid_data %>%
 #   detailed_entries(
-#     with = title,
-#     what = unit,
-#     why = detail,
-#     when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
-#     where = where, .protect = F
+#     what = `education-summary.role-title`,
+#     when = glue::glue("{`education-summary.start-date.year.value`} - {`education-summary.end-date.year.value`}"),
+#     with = `education-summary.organization.name`,
+#     where = `education-summary.organization.address.city`
 #   )
+education %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
+    where = where, .protect = F
+  )
 
 ```
 
