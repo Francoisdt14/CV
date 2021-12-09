@@ -1,4 +1,4 @@
-[![](./img/cvPreview.png)](https://github.com/Francoisdt14/CV/blob/master/CV.pdf)
+https://github.com/Francoisdt14/CV/blob/master/CV.pdf
 
 This CV is created using the R Package vitae
 
