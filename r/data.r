@@ -16,20 +16,20 @@ education <- tribble(
 
 skills <- tribble(
     ~area, ~skills,
-    "Project Management", "Planning, organization, implementation",
     "Technical Writing", "Strong scientific writer including publications and literature reviews",
     "Data Analysis", "Primary experience using R and ArcGIS Pro/ArcMap to conduct spatial analysis, with exposure to QGIS and Google Earth Engine. Adobe Illustrator for figure creation and visualization.",
+    "Project Management", "Planning, organization, implementation, communication and logistics"
 )
 
 awards <- tribble(
-    ~area, ~accomplishment, ~startYear,~endYear, ~where, ~detail,
-    "PhD Funding", "Four Year Doctoral Fellowship (4YF)", 2018, 2022, "Vancouver, BC", NA,
-    "Graduate Award", "Mary and David Macaree Fellowship", 2021, NA, "Vancouver, BC", NA,
-    "Presentation", "WFGA Critchfield Award - Best Student Oral Presentation", 2021, NA, "Vancouver, BC", NA,
-    "Presentation", "UBC Faculty of Forestry 3MT Winner", 2021, NA, "Vancouver, BC", NA,
-    "Graduate Award", "Weldwood of Canada Limited H. Richard Whittall Scholarship", 2020,2021, "Vancouver, BC", NA,
-    "Graduate Award", "VanDusen Graduate Fellowship in Forestry", 2020,2021, "Vancouver, BC", NA,
-    "Undergraduate Award", "APEGBC Achievement Award in Geoscience", 2014, NA, "Vancouver, BC", NA
+    ~area, ~accomplishment, ~firstYear, ~secondYear, ~endYear, ~where, ~detail,
+    "PhD Funding", "Four Year Doctoral Fellowship (4YF)", 2018, NA, 2022, "Vancouver, BC", NA,
+    "Graduate Award", "Mary and David Macaree Fellowship", 2021, NA, NA, "Vancouver, BC", NA,
+    "Presentation", "WFGA Critchfield Award - Best Student Oral Presentation", 2021, NA, NA, "Vancouver, BC", NA,
+    "Presentation", "UBC Faculty of Forestry 3MT Winner", 2021, NA, NA,  "Vancouver, BC", NA,
+    "Graduate Award", "Weldwood of Canada Limited H. Richard Whittall Scholarship", 2020,2021, NA, "Vancouver, BC", NA,
+    "Graduate Award", "VanDusen Graduate Fellowship in Forestry", 2020,2021, NA, "Vancouver, BC", NA,
+    "Undergraduate Award", "APEGBC Achievement Award in Geoscience", 2014, NA, NA, "Vancouver, BC", NA
 )
 
 experience <- tribble(

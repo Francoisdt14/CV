@@ -117,7 +117,7 @@ awards %>%
     with = area,
     what = accomplishment,
     why = detail,
-    when = glue::glue("{startYear} - {endYear}",.na = ""),
+    when = glue::glue("{firstYear} {secondYear}",.na = ""),
     where = where
   )
 
