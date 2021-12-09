@@ -51,21 +51,6 @@ source(file = here("r","data.r"))
 
 ```
 
-# Experience
-
-```{r Experience, results = "asis"}
-
-experience %>%
-  detailed_entries(
-    with = title,
-    what = unit,
-    why = detail,
-    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
-    where = where, .protect = F
-  )
-
-```
-
 # Education
 
 ```{r EDUCATION}
@@ -81,23 +66,47 @@ education %>%
 
 ```
 
-# Technical Skills
+# Experience
 
-```{r techtable, results='markup'}
-tribble(
-   ~`Project Management`, ~`Technical Writing`, ~`Data Analytics`,
-  "Effective Planning, Organization, Communication, Implementation",
-  "Publications, Official Reports, Funding Grants",
-  "R, Management, Manipulation, Visualization, Interpretation",
-) %>%
-  kable(booktabs = T, align = 'c', escape = F, format = "latex") %>%
-  kable_styling(full_width = F, font_size = 9,latex_options = "hold_position") %>% 
-  row_spec(0, bold = T, color = "#414141") %>% 
-  row_spec(1, bold = F, color = "#7f7f7f") %>% 
-  column_spec(column = 1:3, width = '4.75cm')
+```{r Experience, results = "asis"}
+
+experience %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
+    where = where, .protect = F
+  )
+
 ```
 
-\pagebreak
+# Teaching
+
+```{r TeachingExperience}
+
+teachingExperience %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
+    where = where, .protect = F
+  )
+
+```
+
+# Technical Skills
+
+```{r TechnicalSkills}
+
+skills %>%
+  detailed_entries(
+    with = area,
+    what = skills,
+  )
+
+```
 
 # Awards
 
@@ -108,7 +117,7 @@ awards %>%
     with = area,
     what = accomplishment,
     why = detail,
-    when = year,
+    when = glue::glue("{startYear} - {endYear}",.na = ""),
     where = where
   )
 
@@ -140,3 +149,19 @@ presentations %>%
   )
 
 ```
+
+# Activities
+
+```{r Activities}
+
+activities %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
+    where = where, .protect = F
+  )
+
+```
+
