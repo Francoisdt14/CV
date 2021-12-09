@@ -70,13 +70,6 @@ experience %>%
 
 ```{r EDUCATION}
 
-# orcid_data %>%
-#   detailed_entries(
-#     what = `education-summary.role-title`,
-#     when = glue::glue("{`education-summary.start-date.year.value`} - {`education-summary.end-date.year.value`}"),
-#     with = `education-summary.organization.name`,
-#     where = `education-summary.organization.address.city`
-#   )
 education %>%
   detailed_entries(
     with = title,
@@ -88,7 +81,7 @@ education %>%
 
 ```
 
-# Technical Skills 
+# Technical Skills
 
 ```{r techtable, results='markup'}
 tribble(
@@ -147,4 +140,3 @@ presentations %>%
   )
 
 ```
-
