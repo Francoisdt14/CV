@@ -96,7 +96,7 @@ teachingExperience %>%
 
 ```
 
-# Technical Skills
+# Skills
 
 ```{r TechnicalSkills}
 

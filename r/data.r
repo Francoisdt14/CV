@@ -16,9 +16,10 @@ education <- tribble(
 
 skills <- tribble(
     ~area, ~skills,
-    "Technical Writing", "Strong scientific writer including publications and literature reviews",
+    "Technical Writing", "Strong scientific writer including publications and literature reviews. Peer-reviewed articles for a variety of scientific journals",
     "Data Analysis", "Primary experience using R and ArcGIS Pro/ArcMap to conduct spatial analysis, with exposure to QGIS and Google Earth Engine. Adobe Illustrator for figure creation and visualization.",
-    "Project Management", "Planning, organization, implementation, communication and logistics"
+    "Project Management", "Planning, organization, implementation, logistics. Strong communication skills",
+    "Languages", "English - native. Afrikaans - fluent. German - Intermediate. "
 )
 
 awards <- tribble(
