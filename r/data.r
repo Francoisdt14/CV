@@ -85,8 +85,8 @@ presentations <- tribble(
 
 activities <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "Assitant Coach - Men's Rugby", "University of British Columbia", NA, 2019, NA, NA, "Vancouver, BC", NA,
-    "Assitant Coach - Women's Rugby", "Meraloma Rugby Club", NA, 2017, NA, 2019, "Vancouver, BC", NA,
+    "Assistant Coach - Men's Rugby", "University of British Columbia", NA, 2019, NA, NA, "Vancouver, BC", NA,
+    "Assistant Coach - Women's Rugby", "Meraloma Rugby Club", NA, 2017, NA, 2019, "Vancouver, BC", NA,
 )
 
 # "title", "unit", "startMonth", "startYear", "endMonth", "endYear", "where", "detail"
