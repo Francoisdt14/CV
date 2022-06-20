@@ -71,6 +71,8 @@ teachingExperience <- tribble(
 
 presentations <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
+    "University of Tasmania Workshop", "Assessing Structural Differences among Genetically Improved Coastal Douglas-fir Using High Density Airborne Laser Scanning", "April", 2022, NA, NA, "Hobart, Australia",
+    NA,
     "IPNN Forest Phenotyping Working Group Workshop", "Deriving Branch Length and Width from ALS in a Douglas-fir Tree Improvement Trial in British Columbia, Canada", "November", 2021, NA, NA, "Online",
     NA,
     "Canadian Cartographic Association (CCA) Conference", "Use of Remote Sensing Technology for Phenotyping in Tree Improvement Programs in British Columbia, Canada", "May", 2021, NA, NA, "Online",
