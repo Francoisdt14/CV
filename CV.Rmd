@@ -1,7 +1,7 @@
 ---
 name: Francois 
 surname: du Toit
-position: "PhD Candidate"
+position: "Postdoctoral Research Fellow"
 address: "University of British Columbia, Vancouver"
 profilepic: "./img/me.jpg"
 phone: +778 919 5353
@@ -81,20 +81,6 @@ experience %>%
 
 ```
 
-# Teaching
-
-```{r TeachingExperience}
-
-teachingExperience %>%
-  detailed_entries(
-    with = title,
-    what = unit,
-    why = detail,
-    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
-    where = where, .protect = F
-  )
-
-```
 
 # Skills
 
@@ -104,21 +90,6 @@ skills %>%
   detailed_entries(
     with = area,
     what = skills,
-  )
-
-```
-
-# Awards
-
-```{r AWARDS}
-
-awards %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = glue::glue("{firstYear} {secondYear}",.na = ""),
-    where = where
   )
 
 ```
@@ -146,6 +117,36 @@ presentations %>%
     why = detail,
     when = glue::glue("{startMonth} {startYear}",.na = ""),
     where = where, .protect = F
+  )
+
+```
+
+# Teaching
+
+```{r TeachingExperience}
+
+teachingExperience %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
+    where = where, .protect = F
+  )
+
+```
+
+# Awards
+
+```{r AWARDS}
+
+awards %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = glue::glue("{firstYear} {secondYear}",.na = ""),
+    where = where
   )
 
 ```

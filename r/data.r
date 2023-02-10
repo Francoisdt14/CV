@@ -1,16 +1,14 @@
 
 education <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "University of British Columbia", "PhD Remote Sensing of Forests", "September", 2018, "Present", NA, "Vancouver, BC",
+    "University of British Columbia", "PhD Remote Sensing of Forests", "September", 2018, "November", 2022, "Vancouver, BC",
     "Assessing Structural Differences among Genetically Improved Coastal Douglas-fir using High Density Airborne Laser Scanning \\begin{itemize}
         \\item Committee: Nicholas Coops, Yousry A. El-Kassaby, Rob Guy, Arko Lucieer
     \\end{itemize}",
     "University of British Columbia", "Master of Geomatics for Environmental Management", "September", 2017, "April", 2018, "Vancouver, BC",
-    "Professional masters degree program  \\begin{itemize}
-        \\item Advanced GIS, Remote sensing, Spatial statistics
-    \\end{itemize}",
+    "Professional masters degree program including advanced GIS, remote sensing, and spatial statistics",
     "University of British Columbia", "BSc Geology", "September", 2009, "May", 2014, "Vancouver, BC",
-    "Completed all EGBC course requirements in order to become a registered Professional Geoscientist."
+    "Completed all EGBC course requirements in order to become a registered Professional Geoscientist"
 )
 
 
@@ -30,12 +28,15 @@ awards <- tribble(
     "Presentation", "UBC Faculty of Forestry 3MT Winner", 2021, NA, NA,  "Vancouver, BC", NA,
     "Graduate Award", "Weldwood of Canada Limited H. Richard Whittall Scholarship", 2020,2021, NA, "Vancouver, BC", NA,
     "Graduate Award", "VanDusen Graduate Fellowship in Forestry", 2020,2021, NA, "Vancouver, BC", NA,
+    "Graduate Award", "President's Academic Excellence Initiative PhD Award", 2020, 2021, 2022, "Vancouver, BC", NA,
     "Undergraduate Award", "APEGBC Achievement Award in Geoscience", 2014, NA, NA, "Vancouver, BC", NA
 )
 
 experience <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "Doctoral Research", "Department of Forest Resources Management (UBC)", "September", 2018, "Present", NA, "Vancouver, BC",
+    "Postdoctoral Research Fellow", "Department of Forest Resources Management (UBC)", "November", 2022, "Present", NA, "Vancouver, BC", 
+    "Carbon Sequestration Optimization in Canadian Forests",
+    "Doctoral Researcher", "Department of Forest Resources Management (UBC)", "September", 2018, "November", 2022, "Vancouver, BC",
     "Assessing Structural Differences among Genetically Improved Coastal Douglas-fir using High Density Airborne Laser Scanning. \\begin{itemize}
         \\item UAV and airborne LiDAR processing and analysis at the individual tree scale. Focus on the creation and use of novel metrics as well as taking into account genetic x environment interactions
         \\item Contribute to a project aimed at enhancing the measurement and management of genetically improved Douglas-fir, culminating in peer-reviewed papers as well as a best practices guide for breeders in British Columbia    \\end{itemize}",
@@ -71,6 +72,8 @@ teachingExperience <- tribble(
 
 presentations <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
+    "Marcus Wallenberg Prize Young Researchers' Challenge 2022", "Assessing Structural Differences among Genetically Improved Coastal Douglas-fir Using High Density Airborne Laser Scanning (3 Minute Thesis and Poster Presentation)", "November", 2022, NA, NA, "Stockholm, Sweden",
+    NA,
     "University of Tasmania Workshop", "Assessing Structural Differences among Genetically Improved Coastal Douglas-fir Using High Density Airborne Laser Scanning", "April", 2022, NA, NA, "Hobart, Australia",
     NA,
     "IPNN Forest Phenotyping Working Group Workshop", "Deriving Branch Length and Width from ALS in a Douglas-fir Tree Improvement Trial in British Columbia, Canada", "November", 2021, NA, NA, "Online",
